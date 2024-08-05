@@ -81,16 +81,12 @@ Git commands:
 
 `git init` - initialize a repo
 `git status` - basic command to check the repo's status
-
-
-
-
-
-
-
 `git add <name>` - add specific files to the *stage* (in prep for committing them)
 `git reset <name>` - takes a file off the stage
 `git commit` - adds the stage to the permanent history of the project 
+
+
+
 
 
 Important initial configurations:
