@@ -1,6 +1,4 @@
 
-setwd("/Users/bretbeheim/Dropbox/projects/2021/swc-spring-school/cardio-multisite-raw/site 1")
-
 library(readxl)
 
 # dat <- read_xlsx("Data_Final_092315.xlsx")
@@ -37,7 +35,7 @@ m1 <- lm(ln_cac_plus1 ~ Age_Part + Sex, data = dat)
 # plot(dat$Age_Part, dat$ln_cac_plus1, pch = ifelse(dat$Sex == 1, 1, 20))
 # dev.off()
 
-png("analysisplot_new.png", res = 300, height = 5, width = 5, units = "in")
+png("./figures/analysisplot_new.png", res = 300, height = 5, width = 5, units = "in")
 plot(dat$Age_Part, dat$ln_cac_plus1, pch = ifelse(dat$Sex == 1, 1, 20))
 curve(coef(m1)[1] + coef(m1)[2] * x, add = TRUE, col = "gray")
 curve(coef(m1)[1] + coef(m1)[2] * x + coef(m1)[3], add = TRUE)

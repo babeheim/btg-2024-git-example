@@ -75,17 +75,21 @@ What's good / bad about the project repo currently?
 
 
 
+
+
 Strategy: compact the repo down by liberally deleting and renaming, but version-control each and every move so we can rewind things if we need to.
 
-Git commands:
 
+Git commands:
+57fa73e59338fdb2babac805f78d060fe72ae554
 `git init` - initialize a repo
 `git status` - basic command to check the repo's status
 `git add <name>` - add specific files to the *stage* (in prep for committing them)
 `git reset <name>` - takes a file off the stage
 `git commit` - adds the stage to the permanent history of the project 
-
-
+`git log`
+`git checkout <commit name> <filename>`
+`git show`
 
 
 
